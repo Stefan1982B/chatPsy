@@ -6,8 +6,8 @@ import { db } from "@/lib/db";
 import { userSubscriptions } from "@/lib/db/schema";
 
 export async function POST(req: Request) {
-  const body = await req.text;
-  const signature = headers().get("stripe-signature") as string;
+  const body = await req.text();
+  const signature = headers().get("Stripe-Signature") as string;
   let event: Stripe.Event;
 
   try {
@@ -17,7 +17,7 @@ export async function POST(req: Request) {
       process.env.STRIPE_WEBHOOK_SIGNING_SECRET as string
     );
   } catch (error) {
-    return new NextResponse("Webhook Error: ", { status: 400 });
+    return new NextResponse("webhook error", { status: 400 });
   }
 
   const session = event.data.object as Stripe.Checkout.Session;
