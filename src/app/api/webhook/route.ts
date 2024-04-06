@@ -4,6 +4,7 @@ import { stripe } from "@/lib/stripe";
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { userSubscriptions } from "@/lib/db/schema";
+import { eq } from "drizzle-orm";
 
 export async function POST(req: Request) {
   const body = await req.text();
