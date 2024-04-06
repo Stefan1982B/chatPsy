@@ -15,7 +15,7 @@
     "@pinecone-database/pinecone": "^2.1.0",
     "axios": "^1.6.7",
     "@radix-ui/react-slot": "^1.0.2",
-    "@tanstack/react-query": "^5.25.0",
+    "@tanstack/react-query": "^4.33.0",
     "ai": "^3.0.15",
     "aws-sdk": "^2.1569.0",
     "class-variance-authority": "^0.7.0",
