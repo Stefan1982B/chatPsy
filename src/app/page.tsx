@@ -29,7 +29,7 @@ export default async function Home() {
         <div className="flex flex-col items-center text-center">
           <div className="flex items-center">
             <h1 className="mr-3 text-5xl font-semibold">
-              Chat with therapy notes
+              Chat with your therapy notes
             </h1>
             <UserButton afterSignOutUrl="/" />
           </div>
@@ -49,9 +49,10 @@ export default async function Home() {
           </div>
 
           <p className="max-w-xl mt-1 text-lg text-slate-600">
-            Join millions of therapists, psychologists, psychiatrists,
-            coaches,... to instantly get answers to questions, gain
-            understanding of problems, and acquire an overview of patient files
+            Join thousands of therapists, psychologists, coaches,... to
+            instantly access client files, gain insights into behavioral
+            patterns and thoughts, understand the evolution of psychological
+            practices, and much more.
           </p>
 
           <div className="w-full mt-4">
